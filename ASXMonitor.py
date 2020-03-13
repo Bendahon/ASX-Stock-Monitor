@@ -223,8 +223,8 @@ if __name__ == "__main__":
     statfile = open(stat_write_file_name, "w", encoding="utf-8")
     write_to_log_file(f"Generated: {get_date_and_time}")
 
-    # Start the while here in deploy
-    check_folders_exits()
-    check_if_market_open()
-    get_asx_codes()
-    main()
+    while True:
+        check_folders_exits()
+        check_if_market_open()
+        get_asx_codes()
+        main()
